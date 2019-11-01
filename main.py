@@ -24,19 +24,13 @@ for i in range(num):
 	temp_frame = sub_img(lower, upper, buffer)
 	frame_list.append(temp_frame)
 
-# upper1 = position_list[0][3]
-# lower1 = position_list[0][1]
-# upper2 = position_list[1][3]
-# lower2 = position_list[1][1]
 
+#testing
+vs = cv2.VideoCapture('testvideo_pot.mp4') 
 
+#realtime video input
+#vs = cv2.VideoCapture(0)
 
-
-vs = cv2.VideoCapture('testvideo_pot.mp4')
-
- 
-# frame_1 = sub_img(lower1, upper1, buffer)
-# frame_2 = sub_img(lower2, upper2, buffer)
 
 # keep looping
 while True:
@@ -50,11 +44,7 @@ while True:
 		frame_list[i].get_frame(frame)
 		out_frame_list.append(frame_list[i].process_one())
 
-	# frame_1.get_frame(frame)
-	# frame_2.get_frame(frame)
-
-	# out_1 = frame_1.process_one()
-	# out_2 = frame_2.process_one()
+		
 	out_frame = np.concatenate(*[out_frame_list], axis=1)
     
 	# show the frame to our screen and increment the frame counter
