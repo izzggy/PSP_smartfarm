@@ -14,5 +14,5 @@ Prof. Juhong Park's Personal Page: http://www.juhongpark.com/
 
 Videos of Juhong Park's Youtube Channel on Smart Farm: https://www.youtube.com/user/sabee5b/search?query=farm&pbjreload=10
 
-POSTECH's Open Source Smart Farm: https://joyfarmweb.wordpress.com/
+
 
